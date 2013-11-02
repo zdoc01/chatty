@@ -1,0 +1,25 @@
+{
+  "name": "chatty",
+  "author": {
+    "name": "zdoc",
+    "email": "zdoc01@gmail.com"
+  },
+  "version": "0.0.1-1",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "3.0.x",
+    "jade": "*"
+  },
+  "analyze": false,
+  "readmeFilename": "ReadMe.md",
+  "description": "real-time chat application built using node.js and socket.io",
+  "dist": {
+    "shasum": "86cb034c96ccd09df5bbdc9e8226e58af0623af2"
+  },
+  "subdomain": "chattyapp",
+  "engines": {
+    "node": "0.10.x"
+  }
+}
