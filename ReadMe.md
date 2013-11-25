@@ -1,3 +1,6 @@
+# chatty
+A node.js and socket.io real-time chat application.
+
 # Latest
 http://chattyapp.jit.su/
 
