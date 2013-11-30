@@ -1,9 +1,12 @@
 extends layout
 
 block content
-	h1= title
-	p Welcome to #{title}.
+	div.welcome
+		h1= title
+		p Welcome to #{title}, a real-time chat application.
 	div#push
 
 block footer
-	p.credit Some footer content...
+	p.credit
+		a(href="https://twitter.com/chattyapp" class="twitter-follow-button" data-show-count="false" data-lang="en" data-size="large" data-show-screen-name="false")
+			Follow @chattyapp

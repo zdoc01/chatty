@@ -2,7 +2,7 @@
 A node.js and socket.io real-time chat application.
 
 # Latest
-http://chattyapp.jit.su/
+http://chattyapp.jit.su/ - Powered by [Nodejitsu](http://nodejitsu.com)
 
 # License
 

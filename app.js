@@ -9,7 +9,7 @@ var express = require('express')
   , user = require('./routes/user')
   , http = require('http')
   , path = require('path')
-  , port = 9090 //was 8080 but there seems to be a port conflict on my windows box
+  , port = 8080
   , url  = 'http://localhost:' + port + '/';
 /* We can access nodejitsu enviroment variables from process.env */
 /* Note: the SUBDOMAIN variable will always be defined for a nodejitsu app */
