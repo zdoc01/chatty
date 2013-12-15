@@ -9,6 +9,7 @@ var express = require('express')
   , user = require('./routes/user')
   , http = require('http')
   , path = require('path')
+  , exphbs = require('express3-handlebars')
   , port = 8080
   , url  = 'http://localhost:' + port + '/';
 /* We can access nodejitsu enviroment variables from process.env */
@@ -22,7 +23,11 @@ var app = express();
 app.configure(function(){
   app.set('port', process.env.PORT || port);
   app.set('views', __dirname + '/views');
-  app.set('view engine', 'jade');
+
+  //set view engine to handlebars, with 'main.handlebars' as the default layout
+  app.engine('handlebars', exphbs({ defaultLayout: 'main' }));
+  app.set('view engine', 'handlebars');
+
   app.use(express.favicon());
   app.use(express.logger('dev'));
   app.use(express.bodyParser());
@@ -37,8 +42,14 @@ app.configure('development', function(){
   app.use(express.errorHandler());
 });
 
-app.get('/', routes.index);
-app.get('/users', user.list);
+/**
+ * do not use routes - render views into the default layout
+ *
+ */
+app.get('/', function(req, res) {
+  res.render('home');
+});
+
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log("Express server listening on port " + app.get('port'));
