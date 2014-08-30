@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>{{title}}</title>
+    <title>Chatty</title>
 
     <!-- Ensure proper mobile rendering and touch zooming -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,13 +13,21 @@
 	<!-- Optional Bootstrap theme -->
 	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap-theme.min.css"/>
 
-	<link rel='stylesheet' href='/stylesheets/style.css'/>
-	<link rel='stylesheet' href='/stylesheets/app.css'/>
+	<link rel='stylesheet' href='stylesheets/style.css'/>
+	<link rel='stylesheet' href='stylesheets/app.css'/>
 </head>
 <body>
 	<div id="wrap">
 		<div class="container">
-			{{{body}}}
+			<div class="row">
+					<div class="welcome">
+						<span class="logo">chatty</h1>
+						<h4 id="welcome-msg">Welcome to chatty, a real-time chat application.</h4>
+						<a id="join-room-btn" href="javascript:void(0);" class="btn btn-default">Join a Room</a>
+						
+						<div id="push"></div>
+					</div>
+			</div>
 		</div>
 	</div>
 	<div id="footer">

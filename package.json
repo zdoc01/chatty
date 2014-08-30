@@ -1,19 +1,18 @@
 {
   "name": "chatty",
   "author": {
-    "name": "zdoc",
+    "name": "Zachary Lumpkins",
     "email": "zdoc01@gmail.com"
   },
-  "version": "0.0.1-4",
+  "version": "0.1.0",
   "scripts": {
-    "start": "node app.js"
+    "start": "node server.js"
   },
   "dependencies": {
-    "express": "3.0.x",
-    "express3-handlebars": "~0.5.0"
+    "hapi": "^6.7.1"
   },
   "analyze": false,
-  "readmeFilename": "ReadMe.md",
+  "readmeFilename": "README.md",
   "description": "real-time chat application built using node.js and socket.io",
   "dist": {
     "shasum": "86cb034c96ccd09df5bbdc9e8226e58af0623af2"
