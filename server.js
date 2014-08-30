@@ -6,13 +6,8 @@
 var hapi = require('hapi')
   , http = require('http')
   , path = require('path')
-  , PORT = 8080;
-
-/* We can access nodejitsu enviroment variables from process.env */
-/* Note: the SUBDOMAIN variable will always be defined for a nodejitsu app */
-var subdomain = (process.env.SUBDOMAIN) ? process.env.SUBDOMAIN : 'localhost';
-
-var server = new hapi.Server(subdomain, PORT);
+  , PORT = 8080
+  , server = new hapi.Server(PORT);
 
 server.route({
     method: 'GET',
