@@ -1,0 +1,19 @@
+{
+    "isDev": false,
+    "isSecure": false,
+    "session": {
+        "host": "prod",
+        "port": 6379,
+        "db": 1,
+        "secret": "chatty",
+        "secure": false
+    },
+    "http": {
+        "listen": "prod",
+        "port": 8080
+    },
+    "client": {
+        "apiUrl": "http://prod:8080",
+        "debugMode": true
+    }
+}
